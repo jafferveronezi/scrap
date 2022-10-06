@@ -44,7 +44,7 @@ app.get('/books/:page', (req, res) => {
         })
 })
 
-const port = 3000
+const port = process.env.PORT || 3000
 app.listen (port , () => {
-    console.log(`Servido rodando em http://localhost:${port}`)
+    console.log(`Servido rodando em http://localhost:${port}/books/1`)
 })
